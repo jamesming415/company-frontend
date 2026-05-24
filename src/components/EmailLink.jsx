@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const EMAIL_ADDRESS = "connect@digitwise.org";
-const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL_ADDRESS)}&su=${encodeURIComponent("DigitWise inquiry")}`;
+const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL_ADDRESS)}&su=${encodeURIComponent("")}`;
 
 function EmailLink({ className = "" }) {
   const [copied, setCopied] = useState(false);
