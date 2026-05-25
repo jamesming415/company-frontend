@@ -102,7 +102,7 @@ function ContactPage() {
                   </div>
                   <div className="form-group">
                     <label className="form-label">Message *</label>
-                    <textarea className="form-textarea" name="message" value={form.message} onChange={handle} placeholder="Tell us about your project or inquiry..." required />
+                    <textarea className="form-textarea" name="message" value={form.message} onChange={handle} placeholder="Tell us about your project or inquiry..." required minLength={10} maxLength={4000} />
                   </div>
                   {error ? <div className="form-error" role="alert">{error}</div> : null}
                   <button type="submit" className="btn-primary contact-submit" disabled={sending}>
