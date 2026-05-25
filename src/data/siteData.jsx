@@ -71,7 +71,7 @@ export const WHAT_WE_HAVE_DONE = [
   {
     icon: "game",
     title: "Game Services Ready for Partners",
-    desc: "We have already developed game service foundations that are ready to use and ready to scale. The next step is partnership: publishing, distribution, integration, and commercial growth.",
+    desc: "We have already developed game service foundations that are ready to use and ready to scale. The next step is partnership: publishing, distribution, integration, and commercial growth. If you're interested, don't hesitate to contact us.",
   },
   {
     icon: "mobile",
