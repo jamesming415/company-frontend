@@ -67,6 +67,24 @@ export const SERVICES = [
   },
 ];
 
+export const WHAT_WE_HAVE_DONE = [
+  {
+    icon: "game",
+    title: "Game Services Ready for Partners",
+    desc: "We have already developed game service foundations that are ready to use and ready to scale. The next step is partnership: publishing, distribution, integration, and commercial growth.",
+  },
+  {
+    icon: "mobile",
+    title: "Web and Mobile Apps for Clients",
+    desc: "We have delivered many web and mobile applications for clients with real product needs, turning ideas into polished platforms, practical workflows, and customer-facing digital experiences.",
+  },
+  {
+    icon: "trading",
+    title: "Trading Strategies in Development",
+    desc: "We are actively developing trading strategies for clients, combining software engineering, automation, data-driven thinking, and disciplined execution for financial technology use cases.",
+  },
+];
+
 export const TEAM = [
   {
     name: "Randall",

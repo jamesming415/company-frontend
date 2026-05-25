@@ -1,60 +1,56 @@
-import { useState } from "react";
-import { SERVICES } from "../data/siteData.jsx";
+import { SERVICES, WHAT_WE_HAVE_DONE } from "../data/siteData.jsx";
 import { Icon } from "../components/Icon.jsx";
+import { ServiceCard } from "../components/ServiceCard.jsx";
 
 function ServicesPage({ setPage }) {
-  const [activeFilter, setActiveFilter] = useState(null);
-
-  const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-    setActiveFilter(id);
+  const goToContact = () => {
+    setPage("Contact Us");
+    window.scrollTo({ top: 0 });
   };
 
   return (
     <div className="page page-standard">
-      <section className="section">
+      <section className="section services-proof-section">
         <div className="container">
-          <div style={{ marginBottom: 40 }}>
-            <div className="section-label">What We Offer</div>
-            <h2 className="section-h2">Our <span>Services</span></h2>
-            <p className="section-sub">Comprehensive IT solutions designed to help your business innovate, scale, and secure its future.</p>
+          <div className="proof-section">
+            <div className="proof-heading">
+              <div className="section-label">Proof of Work</div>
+              <h3 className="proof-title">What We Have <span>Done</span></h3>
+              <p className="proof-sub">
+                DigitWise is not only planning technology. We have already built real products, shipped client applications, and are developing advanced strategies for new business opportunities.
+              </p>
+            </div>
+            <div className="proof-grid">
+              {WHAT_WE_HAVE_DONE.map((item, index) => (
+                <div className="proof-card" key={item.title}>
+                  <div className="proof-index">{String(index + 1).padStart(2, "0")}</div>
+                  <div className="proof-icon">
+                    <Icon name={item.icon} size={30} />
+                  </div>
+                  <h4 className="proof-card-title">{item.title}</h4>
+                  <p className="proof-card-desc">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="services-nav">
-            {SERVICES.map((s) => (
-              <button key={s.id} className={`services-nav-btn${activeFilter === s.id ? " active" : ""}`} onClick={() => scrollTo(s.id)}>
-                <Icon name={s.icon} size={16} strokeWidth={2} /> {s.title}
-              </button>
-            ))}
+        </div>
+      </section>
+
+      <section className="section services-catalog-section">
+        <div className="container">
+          <div className="services-catalog-heading">
+            <div>
+              <div className="section-label">What We Offer</div>
+              <h2 className="section-h2">Our <span>Services</span></h2>
+            </div>
+            <p className="section-sub services-catalog-sub">Comprehensive IT solutions designed to help your business innovate, scale, and secure its future.</p>
           </div>
 
-          {SERVICES.map((s, i) => (
-            <div key={s.id} id={s.id} className="service-section">
-              <div className="service-section-text">
-                <div className="service-section-icon">
-                  <Icon name={s.icon} size={38} />
-                </div>
-                <h3 className="service-section-title">{s.title}</h3>
-                <p className="service-section-desc">{s.desc}</p>
-                <button className="btn-primary" onClick={() => { setPage("Contact Us"); window.scrollTo({ top: 0 }); }}>
-                  {s.cta}
-                </button>
-              </div>
-              <div className="service-section-visual">
-                <img
-                  className="service-section-image"
-                  src={s.image}
-                  alt={`${s.title} service`}
-                  loading={i === 0 ? "eager" : "lazy"}
-                  decoding="async"
-                  sizes="(max-width: 900px) 90vw, 46vw"
-                />
-                <div className="service-section-image-label">
-                  <Icon name={s.icon} size={18} strokeWidth={2} />
-                  <span>{s.title}</span>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="services-grid services-catalog-grid">
+            {SERVICES.map((s) => (
+              <ServiceCard key={s.id} s={s} onLearnMore={goToContact} onContact={goToContact} />
+            ))}
+          </div>
         </div>
       </section>
     </div>

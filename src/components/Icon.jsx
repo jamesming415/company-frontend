@@ -3,6 +3,7 @@ import {
   CheckCircle2,
   CloudCog,
   Code2,
+  Gamepad2,
   Globe2,
   Lightbulb,
   Mail,
@@ -11,6 +12,8 @@ import {
   Phone,
   Route,
   ShieldCheck,
+  Smartphone,
+  TrendingUp,
 } from "lucide-react";
 
 const ICONS = {
@@ -18,6 +21,7 @@ const ICONS = {
   check: CheckCircle2,
   cloud: CloudCog,
   code: Code2,
+  game: Gamepad2,
   globe: Globe2,
   lightbulb: Lightbulb,
   mail: Mail,
@@ -26,6 +30,8 @@ const ICONS = {
   phone: Phone,
   route: Route,
   shield: ShieldCheck,
+  mobile: Smartphone,
+  trading: TrendingUp,
   website: Globe2,
 };
 
