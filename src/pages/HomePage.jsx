@@ -5,8 +5,8 @@ function HomePage({ setPage }) {
       <section className="hero">
         <img
           className="hero-photo"
-          src="https://images.unsplash.com/photo-1758873267964-66a045a75e25?auto=format&fit=crop&fm=jpg&q=82&w=2400"
-          alt=""
+          src="/images/digitwise-hero-founder.png"
+          alt="hero-photo"
           fetchPriority="high"
           decoding="async"
         />
