@@ -28,7 +28,7 @@ function ContactPage() {
       });
       const result = await response.json().catch(() => ({}));
 
-      if (!response.ok || !result.ok) {
+      if (!result || !result.success) {
         throw new Error(result.message || "Message could not be sent right now.");
       }
 
