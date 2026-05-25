@@ -76,7 +76,7 @@ export const TEAM = [
   {
     name: "Jay",
     role: "CTO",
-    bio: "Jay is a Toptal full-stack developer and published Node.js author who brings senior engineering experience to DigitWise's architecture, reliability, and delivery standards.",
+    bio: "Jay is a ex-Toptal full-stack developer and published Node.js author who brings senior engineering experience to DigitWise's architecture, reliability, and delivery standards.",
     linkLabel: "Read Node.js post",
     profileUrl: "https://www.toptal.com/developers/nodejs/node-js-error-handling&quot",
   },
@@ -93,21 +93,21 @@ export const TEAM = [
   {
     name: "Saburo",
     role: "Developer",
-    bio: "Saburo is a Toptal developer with 15 years of full-stack web experience, bringing proven delivery across modern front-end, back-end, cloud, testing, and API systems.",
+    bio: "Saburo is a ex-Toptal developer with 15 years of full-stack web experience, bringing proven delivery across modern front-end, back-end, cloud, testing, and API systems.",
     linkLabel: "Connect Profile",
     profileUrl: "https://www.toptal.com/developers/resume/saburo-suzuki&quot",
   },
   {
     name: "Hong",
     role: "Developer",
-    bio: "Hong is a Toptal senior full-stack developer and architect with 15+ years of experience building enterprise-grade applications, cloud-backed platforms, and reliable business systems.",
+    bio: "Hong is a ex-Toptal senior full-stack developer and architect with 15+ years of experience building enterprise-grade applications, cloud-backed platforms, and reliable business systems.",
     linkLabel: "Connect Profile",
     profileUrl: "https://www.toptal.com/developers/resume/hong-zheng&quot",
   },
   {
     name: "Po-Chun",
     role: "Developer",
-    bio: "Po-Chun is a Toptal software developer with strong experience in back-end systems, microservices, .NET, Java, Docker, databases, and production-level problem solving.",
+    bio: "Po-Chun is a ex-Toptal software developer with strong experience in back-end systems, microservices, .NET, Java, Docker, databases, and production-level problem solving.",
     linkLabel: "Connect Profile",
     profileUrl: "https://www.toptal.com/developers/resume/po-chun-yu&quot",
   },
