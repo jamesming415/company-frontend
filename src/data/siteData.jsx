@@ -87,47 +87,47 @@ export const WHAT_WE_HAVE_DONE = [
 
 export const TEAM = [
   {
-    name: "Randall",
+    name: "Randall Smith",
     role: "CEO",
     bio: "Randall leads DigitWise's company vision, partnerships, and startup-focused growth strategy.",
   },
   {
-    name: "Jay",
+    name: "Jay Huang",
     role: "CTO",
     bio: "Jay is a ex-Toptal full-stack developer and published Node.js author who brings senior engineering experience to DigitWise's architecture, reliability, and delivery standards.",
     linkLabel: "Read Node.js post",
-    profileUrl: "https://www.toptal.com/developers/nodejs/node-js-error-handling&quot",
+    profileUrl: "https://www.toptal.com/developers/nodejs/node-js-error-handling",
   },
   {
-    name: "Alex",
+    name: "Alex Jun",
     role: "Co-founder",
     bio: "Alex drives the company's growth strategy and client relationships, combining business acumen with a passion for delivering technology-driven outcomes.",
   },
   {
-    name: "James",
+    name: "James Ming",
     role: "CFO & HR Manager",
     bio: "James oversees financial strategy and people operations, ensuring DigitWise runs efficiently while fostering a culture of excellence and innovation.",
   },
   {
-    name: "Saburo",
+    name: "Saburo Suzuki",
     role: "Developer",
     bio: "Saburo is a ex-Toptal developer with 15 years of full-stack web experience, bringing proven delivery across modern front-end, back-end, cloud, testing, and API systems.",
     linkLabel: "Connect Profile",
-    profileUrl: "https://www.toptal.com/developers/resume/saburo-suzuki&quot",
+    profileUrl: "https://www.toptal.com/developers/resume/saburo-suzuki",
   },
   {
-    name: "Hong",
+    name: "Hong Zheng",
     role: "Developer",
     bio: "Hong is a ex-Toptal senior full-stack developer and architect with 15+ years of experience building enterprise-grade applications, cloud-backed platforms, and reliable business systems.",
     linkLabel: "Connect Profile",
-    profileUrl: "https://www.toptal.com/developers/resume/hong-zheng&quot",
+    profileUrl: "https://www.toptal.com/developers/resume/hong-zheng",
   },
   {
-    name: "Po-Chun",
+    name: "Po-Chun Yu",
     role: "Developer",
     bio: "Po-Chun is a ex-Toptal software developer with strong experience in back-end systems, microservices, .NET, Java, Docker, databases, and production-level problem solving.",
     linkLabel: "Connect Profile",
-    profileUrl: "https://www.toptal.com/developers/resume/po-chun-yu&quot",
+    profileUrl: "https://www.toptal.com/developers/resume/po-chun-yu",
   },
 ];
 
