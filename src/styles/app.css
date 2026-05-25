@@ -926,10 +926,32 @@
     background: rgba(5, 10, 20, 0.68);
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
+  }
+
+  .proof-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26, 108, 246, 0.06) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+
+  .proof-card:hover {
+    border-color: rgba(26, 108, 246, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(26, 108, 246, 0.15);
+  }
+
+  .proof-card:hover::before {
+    opacity: 1;
   }
 
   .proof-card::after {
@@ -950,6 +972,13 @@
     font-weight: 850;
     line-height: 1;
     margin-bottom: 16px;
+    transition: color 0.25s, transform 0.25s, text-shadow 0.25s;
+  }
+
+  .proof-card:hover .proof-index {
+    color: var(--cyan);
+    transform: translateX(2px);
+    text-shadow: 0 0 22px rgba(0, 194, 255, 0.42);
   }
 
   .proof-icon {
@@ -978,6 +1007,7 @@
     color: var(--muted);
     font-size: 0.94rem;
     line-height: 1.66;
+    margin-bottom: 20px;
   }
 
   .service-section {

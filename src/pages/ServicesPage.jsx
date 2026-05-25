@@ -22,13 +22,17 @@ function ServicesPage({ setPage }) {
             </div>
             <div className="proof-grid">
               {WHAT_WE_HAVE_DONE.map((item, index) => (
-                <div className="proof-card" key={item.title}>
+                <div className="proof-card" key={item.title} onClick={goToContact}>
                   <div className="proof-index">{String(index + 1).padStart(2, "0")}</div>
                   <div className="proof-icon">
                     <Icon name={item.icon} size={30} />
                   </div>
                   <h4 className="proof-card-title">{item.title}</h4>
                   <p className="proof-card-desc">{item.desc}</p>
+                  <button className="service-link" type="button" onClick={(e) => { e.stopPropagation(); goToContact(); }}>
+                    Contact Us
+                    <span aria-hidden="true">→</span>
+                  </button>
                 </div>
               ))}
             </div>
