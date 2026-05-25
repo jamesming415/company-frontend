@@ -2,7 +2,7 @@ import { Icon } from "./Icon.jsx";
 
 function ServiceCard({ s, onLearnMore, onContact }) {
   return (
-    <div className="service-card" onClick={() => s.cta === "Learn More" ? onLearnMore() : onContact()}>
+    <div id={s.id} className="service-card" onClick={() => s.cta === "Learn More" ? onLearnMore() : onContact()}>
       <span className="service-icon">
         <Icon name={s.icon} size={28} />
       </span>

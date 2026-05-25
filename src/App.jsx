@@ -8,8 +8,43 @@ const AboutPage = lazy(() => import("./pages/AboutPage.jsx").then((module) => ({
 const ServicesPage = lazy(() => import("./pages/ServicesPage.jsx").then((module) => ({ default: module.ServicesPage })));
 const ContactPage = lazy(() => import("./pages/ContactPage.jsx").then((module) => ({ default: module.ContactPage })));
 
+const PAGE_ROUTES = {
+  Home: "/",
+  About: "/about",
+  Services: "/services",
+  "Contact Us": "/contact",
+};
+
+const ROUTE_PAGES = {
+  "/": "Home",
+  "/about": "About",
+  "/services": "Services",
+  "/contact": "Contact Us",
+  "/contact-us": "Contact Us",
+};
+
+const getPageFromPath = () => {
+  const path = window.location.pathname.replace(/\/+$/, "") || "/";
+  return ROUTE_PAGES[path] ?? "Home";
+};
+
 export default function App() {
-  const [page, setPage] = useState("Home");
+  const [page, setPageState] = useState(getPageFromPath);
+
+  const setPage = (nextPage) => {
+    const nextPath = PAGE_ROUTES[nextPage] ?? "/";
+    setPageState(nextPage);
+
+    if (window.location.pathname !== nextPath) {
+      window.history.pushState({ page: nextPage }, "", nextPath);
+    }
+  };
+
+  useEffect(() => {
+    const onPopState = () => setPageState(getPageFromPath());
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
