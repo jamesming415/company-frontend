@@ -2,7 +2,7 @@ import { useState } from "react";
 import { EmailLink } from "../components/EmailLink.jsx";
 import { Icon } from "../components/Icon.jsx";
 
-const API_BASE_URL = "https://company-backend-w6y3.onrender.com";
+const API_BASE_URL = "https://backend.digitwise.org";
 
 function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
