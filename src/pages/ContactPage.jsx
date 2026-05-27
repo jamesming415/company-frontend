@@ -63,7 +63,7 @@ function ContactPage() {
                 <div className="contact-info-icon"><Icon name="phone" size={20} /></div>
                 <div>
                   <div className="contact-info-label">Phone</div>
-                  <div className="contact-info-val">+1 (407) 801-9640</div>
+                  <div className="contact-info-val">+1 (305) 697-9121</div>
                 </div>
               </div>
               <div className="contact-info-item">
