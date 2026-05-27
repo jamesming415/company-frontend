@@ -33,7 +33,7 @@ function Footer({ setPage }) {
           <div>
             <div className="footer-col-title">Contact</div>
             <EmailLink className="footer-link" />
-            <p className="footer-link" style={{ cursor: "default" }}>+1 (407) 801-9640</p>
+            <p className="footer-link" style={{ cursor: "default" }}>+1 (305) 697-9121</p>
             <p className="footer-link" style={{ cursor: "default" }}>2125 Biscayne Blvd, Ste 204</p>
             <p className="footer-link" style={{ cursor: "default" }}>Miami, FL 33137</p>
           </div>
