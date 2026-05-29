@@ -129,6 +129,12 @@ export const TEAM = [
     linkLabel: "Connect Profile",
     profileUrl: "https://www.toptal.com/developers/resume/po-chun-yu",
   },
+  {
+    name: "Sidney Otuga",
+    role: "Recruiter",
+    bio: "Sidney is an experienced technology recruiter skilled at identifying, attracting, and connecting top talent with the right opportunities.",
+    linkLabel: "Connect Profile",
+  },
 ];
 
 export const SOCIAL = [
